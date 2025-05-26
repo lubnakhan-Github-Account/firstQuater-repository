@@ -1,0 +1,50 @@
+
+
+body{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}    
+    
+#background{
+    background-color:hsl(23, 68%, 73%);
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 12px;
+}
+#main{
+    background-color: hsl(180, 3%, 6%);
+    width:auto;
+    height:auto;
+    border-radius:12px;
+    padding:12px;
+    text-align:center;
+    box-shadow:8px 8px 8px 0px black;
+}
+.btun{
+    height:45px;
+    width:45px;
+    margin:3px;
+    font-size:18px;
+    border-radius:20px;
+}    
+#screen{
+    width:210px;
+    height:40px;
+    background:rgb(224, 233, 146);
+    border-radius:5px;
+    text-align:right;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+.btun:hover{
+    background-color:hsla(165, 86%, 54%, 0.973);
+}      
+
+
+
+

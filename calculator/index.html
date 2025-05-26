@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="background">
+        <form>
+            <div id="main">
+                <div id="calculator">
+                    <input type="text" id="screen" name="display">
+                        <div class="buttons_div">
+                        
+                            <input type="button" value="AC" class="btun" onclick="display.value ='' ">
+                            <input type="button" value="DEL" class="btun"
+                                onclick="display.value=display.value.slice(0,-1)">
+                            <input type="button" value="." class="btun" onclick="display.value +='.'">
+                            <input type="button" value="/" class="btun" onclick="display.value +='/'">
+                        </div>
+
+                        <div class="buttons_div">
+                            <input type="button" value="7" class="btun" onclick="display.value +='7'">
+                            <input type="button" value="8" class="btun" onclick="display.value +='8'">
+                            <input type="button" value="9" class="btun" onclick="display.value +='9'">
+                            <input type="button" value="*" class="btun" onclick="display.value +='*'">
+                        </div>
+                        <div class="buttons_div">
+                            <input type="button" value="4" class="btun" onclick="display.value +='4'">
+                            <input type="button" value="5" class="btun" onclick="display.value +='5'">
+                            <input type="button" value="6" class="btun" onclick="display.value +='6'">
+                            <input type="button" value="-" class="btun" onclick="display.value +='-'">
+                        </div>
+                        <div class="buttons_div">
+                            <input type="button" value="1" class="btun" onclick="display.value +='1'">
+                            <input type="button" value="2" class="btun" onclick="display.value +='2'">
+                            <input type="button" value="3" class="btun" onclick="display.value +='3'">
+                            <input type="button" value="+" class="btun" onclick="display.value +='+'">
+                        </div>
+                        <div class="buttons_div">
+                            <input type="button" value="off" class="btun offClass" onclick="offFunc()">
+                            <input type="button" value="0n" class="btun onClass" onclick="onFunc()">
+                            <input type="button" value="0" class="btun" onclick="display.value +='0'">
+                            <input type="button" value="=" class="btun" onclick="display.value=eval(display.value)">
+                        </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
